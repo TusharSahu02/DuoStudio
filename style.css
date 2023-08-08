@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@font-face {
+  font-family: "PP mori";
+  src: url(fonts/PPMori-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  /* cursor: none; */
+  font-family: "pp mori";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  cursor: none;
+}
+
+.cursor {
+  height: 20px;
+  width: 20px;
+  position: fixed;
+  border-radius: 50%;
+  background-color: #e5b7f7;
+  z-index: 8;
+  transition: background-image ease 0.5s;
+  background-position: center;
+  background-size: cover;
+  mix-blend-mode: difference;
+  /* transition: linear ease 0.6s; */
+}
+
+.main {
+  background-color: #0f0d0d;
+}
+
+.page1 {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 9;
+  padding-top: 12vw;
+}
+
+.nav {
+  font-family: "pp mori";
+  height: 50px;
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  mix-blend-mode: difference;
+  z-index: 120;
+}
+
+.nav-part2 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav > .nav-part3 > .circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.nav > .nav-part2 > h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+.nav > .nav-part2 > h4:nth-child(1) {
+  border-bottom: 2px solid #fff;
+}
+
+.page1 h1 {
+  font-size: 6vw;
+  font-weight: 500;
+  font-family: "PP mori";
+  text-align: center;
+}
+.page1 h2 {
+  font-family: "PP mori", sans-serif;
+  font-weight: 500;
+  font-size: 6vw;
+  text-align: center;
+}
+.page1 p {
+  text-align: center;
+  width: 550px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  font-family: "PP mori";
+  font-size: 1.5rem;
+}
+
+.page1 video {
+  width: 55px;
+  margin-top: 90vh;
+  z-index: 1;
+}
+
+.page2 {
+  min-height: 80vh;
+  width: 100%;
+  padding: 100px 5vw;
+  border-bottom: 2px solid #6c6c6c;
+  position: relative;
+  z-index: 9;
+}
+
+.page2 h1 {
+  font-size: 7vw;
+  font-weight: 500;
+  font-family: "pp mori";
+  color: #111;
+}
+.page2-container {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 5vw; */
+}
+
+.page2-left {
+  /* background-color: blue; */
+  width: 38%;
+}
+.page2-right {
+  /* background-color: blue; */
+  width: 24%;
+}
+.page2-right p {
+  font-size: 28px;
+  font-family: "pp mori";
+  color: #111;
+}
+
+.page2-left h2 {
+  font-size: 4vw;
+  font-weight: 300;
+  color: #111;
+  font-family: "pp mori";
+  line-height: 4vw;
+}
+.page2-right button {
+  width: 100%;
+  border-radius: 50px;
+  padding: 4px 0;
+  background-color: #edbfff;
+  color: #111;
+  margin-top: 20px;
+  border: none;
+}
+
+.page3 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  /* padding-top: 100px; */
+  padding: 100px 200px;
+  z-index: 9;
+}
+
+.page3 h1 {
+  font-size: 6.8vw;
+  color: #111;
+  font-weight: 300;
+  margin-left: 100px;
+  font-family: "pp mori";
+}
+
+.page3-part1,
+.page3-part2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.page3-part1 img {
+  height: 600px;
+  width: 350px;
+  margin-top: 160px;
+  object-fit: cover;
+  transition: all 0.3s ease-out;
+}
+.page3-part1 img:hover {
+  filter: blur(2px);
+  transform: scale(1.05);
+}
+.page3-part2 img:hover {
+  transform: scale(1.05);
+  filter: blur(2px);
+}
+.page3-part2 img {
+  height: 600px;
+  width: 350px;
+  transition: all 0.3s ease-out;
+  object-fit: cover;
+}
+.page3-part2 video {
+  margin-top: 160px;
+}
+.page3-part2 video:hover {
+  filter: blur(4px);
+}
+.page3-part1 video:hover {
+  filter: blur(4px);
+}
+
+.page4 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 9;
+  font-family: "pp mori";
+  padding: 100px 100px;
+}
+.elem {
+  /* background-color: salmon; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.elem h1 {
+  font-size: 7.3vw;
+  transition: all ease-out 0.5s;
+  color: #fff;
+}
+.elem img:nth-child(1) {
+  left: 10%;
+}
+.elem img:nth-child(3) {
+  right: 7%;
+}
+.elem img {
+  height: 400px;
+  object-fit: contain;
+  width: 350px;
+  position: absolute;
+  opacity: 0;
+  transition: all ease-out 0.5s;
+  transform: translateY(10%) rotate(2deg);
+}
+.elem:hover h1 {
+  transform: translateY(-100%);
+  color: #edbfff;
+}
+.elem:hover img {
+  opacity: 1;
+  transform: translateY(0%) rotate(0deg);
+}
+.text-div {
+  /* background-color: lightblue; */
+  height: 145px;
+  overflow: hidden;
+}
+
+.page5 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 9;
+  font-family: "pp mori";
+  padding: 140px 100px;
+}
+
+.page5 h2 {
+  font-size: 4vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  border-top: 1.5px solid #dadada;
+  padding: 0 20px;
+}
+
+.box:nth-last-child(1) {
+  border-bottom: 1.5px solid #dadada;
+}
+
+.footer {
+  height: 100vh;
+  width: 100%;
+  background-color: #edbfff;
+  overflow: hidden;
+}
