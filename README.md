@@ -32,4 +32,4 @@ https://github.com/TusharSahu02/DuoStudio/assets/82487339/9eedfb57-85f7-4651-a2b
 
 
 
-##### Deployed Link : 
+##### Deployed Link : https://tushar-project1.netlify.app/
